@@ -12,7 +12,6 @@ async function prep (){
         console.log(e.name); // logs 'Error'
         console.log(e.message); // logs 'The message' or a JavaScript error message
     }
-   
 }
 prep().then(()=>{
     data.sort(function(a, b){
