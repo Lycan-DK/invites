@@ -6,9 +6,15 @@ var dublin = {  latitude:53.339428,
 var distance = 100;
 
 async function prep (){
-    data  =await  lib.prepare(data, dublin, distance)
+    try{
+        data  =await  lib.prepare(data, dublin, distance)
+    }catch(e){
+        console.log(e.name); // logs 'Error'
+        console.log(e.message); // logs 'The message' or a JavaScript error message
+    }
+   
 }
-prep().then(result=>{
+prep().then(()=>{
     data.sort(function(a, b){
         var keyA = a.user_id, // sorting according to user_id
             keyB = b.user_id;
