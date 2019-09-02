@@ -1,0 +1,14 @@
+{
+  "name": "partyinvite",
+  "version": "1.0.0",
+  "description": "for inviting people into party from distance",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "lycandk",
+  "license": "MIT",
+  "dependencies": {
+    "@lycandk/calculatedistance": "1.0.1"
+  }
+}
