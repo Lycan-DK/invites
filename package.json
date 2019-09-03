@@ -9,6 +9,6 @@
   "author": "lycandk",
   "license": "MIT",
   "dependencies": {
-    "@lycandk/calculatedistance": "1.0.2"
+    "@lycandk/calculatedistance": "1.0.3"
   }
 }
