@@ -7,6 +7,8 @@ var distance = 100;
 
 async function prep (){
     try{
+        data =  data.replace(/\n/g,'');
+        data = data.split('\r'); // covert into array format
         data  =await  lib.prepare(data, dublin, distance)
     }catch(e){
         console.log(e.name); // logs 'Error'
